@@ -1,0 +1,291 @@
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.post-img img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.post-content {
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-content h1 {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.post-content i {
+  color: #666a;
+  padding: 0 5px;
+  margin-bottom: 2rem;
+}
+
+.post-content i span {
+  padding: 0 10px;
+  transition: color .1s ease;
+  cursor: pointer;
+}
+
+.post-content i span:hover {
+  color: #93d1e1;
+}
+
+.post-content p {
+  line-height: 1.5;
+  color: #666;
+  text-align: justify;
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+}
+
+.likes {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+
+.likes .like {
+  display: flex;
+  align-items: center;
+}
+
+.likes .like p {
+  margin: 0 10px;
+}
+
+.share-post {
+  display: flex;
+  align-items: center;
+}
+
+.share-post p {
+  padding: 0 10px;
+}
+
+.share-post a {
+  padding: 0 15px;
+  color: #666;
+}
+
+.share-post a:hover {
+  color: #000;
+}
+
+.prev-next-post {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.prev-post a, .next-post a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-post a:hover, .next-post a:hover {
+  color: #93d1e1;
+}
+
+.prev-post h6, .next-post h6 {
+  font-size: 1rem;
+  margin: 0 2px;
+}
+
+.prev-post h6 i {
+  padding-right: 1.2rem;
+}
+
+.next-post > a {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 0;
+}
+
+.next-post h6 i {
+  padding-left: 1.2rem;
+}
+
+.prev-post-text, .next-post-text {
+  display: flex;
+  align-items: flex-start;
+}
+
+.prev-post-text img, .next-post-text img {
+  object-fit: cover;
+  width: 110px;
+  height: 90px;
+  padding-right: 10px;
+}
+
+.prev-post-content h5, .next-post-content h5 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.prev-post-content p, .next-post-content p {
+  color: #666;
+  padding-left: 8px;
+}
+  
+.post-author-about {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  background: rgb(251 249 255);
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.post-author-about > img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.post-author-about .post-about {
+  padding-left: 10px;
+}
+
+.post-author-about .post-about h4 {
+  padding-bottom: 5px;
+}
+
+.post-author-about .post-about p {
+  text-align: justify;
+  line-height: 1.1;
+  padding-bottom: 8px;
+}
+
+.post-author-about .single-post-icon {
+  display: flex;
+  align-items: center;
+}
+
+.post-author-about .single-post-icon a {
+  color: #000;
+  padding: 8px;
+}
+
+.post-comments {
+  margin: .5rem;
+  border-top: 1px solid #ddd;
+}
+
+.post-comments h2 {
+  margin: 2rem 0 1rem;
+  text-transform: uppercase;
+}
+
+.post-comments .comment {
+  display: flex;
+  align-items: flex-start;
+}
+
+.post-comments .comment > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.post-comments .comment-body > p {
+  text-align: justify;
+  margin-top: 6px;
+  line-height: 1.1;
+  color: #666;
+}
+
+.post-comments .commentor {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.post-comments .commentor h6, .post-comments .commentor button {
+  color: #666;
+}
+
+.post-comments .commentor button {
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.post-comments .commentor button:hover {
+  color: #000;
+}
+
+.comment-reply {
+  display: flex;
+  padding-left: 15%;
+}
+
+.comment-reply img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.reply-body > p {
+  margin-top: 6px;
+  text-align: justify;
+  line-height: 1.1;
+  color: #666;
+}
+
+.reply-body .reply {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.reply h6 {
+ color: #666;
+}
+
+.reply-input {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-input form {
+  width: 100%;
+}
+
+.reply-input #reply {
+  width: 100%;
+  outline: none;
+  text-align: justify;
+  padding: 2px;
+}
+

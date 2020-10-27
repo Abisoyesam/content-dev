@@ -1,0 +1,21 @@
+/*@ font -face*/
+
+@font-face{
+	font-family: "Lato Regular";
+	src:'./fonts/Lato-Regular.tff';
+}
+
+@font-face{
+	font-family: "Lato Bold";
+	src:'./fonts/Lato-Bold.tff';
+}
+
+@font-face{
+	font-family: "Oxygen Bold";
+	src:'./fonts/Oxygen-Bold.tff';
+}
+
+@font-face{
+	font-family: "Oxygen Regular";
+	src:'./fonts/Oxygen-Regular.tff';
+}
