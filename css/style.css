@@ -78,17 +78,6 @@ body {
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .nav-lists {
-    display: none;
-  }
-  .fa-bars {
-    display: flex;
-    padding-right: 1.2rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-}
 /* banner */
 .hero {
   display: flex;
@@ -140,21 +129,6 @@ body {
   border: 1px solid #fff;
 }
 
-@media (max-width: 600px) {
-  .hero {
-    height: 90vh;
-  }
-
-  .banner-title {
-    font-size: 2rem;
-  }
-
-  .banner-btn {
-    padding: .8rem 1rem;
-    font-size: .8rem;
-  }
-}
-
 /* about */
 .site-main .about {
   display: grid;
@@ -188,34 +162,6 @@ body {
   color: #666;
   line-height: 1.5;
   text-align: justify;
-}
-
-@media (max-width: 600px) {
-  .site-main .about {
-    grid-template-columns: 1fr;
-    bottom: -45%;
-  }
-
-  .about #about {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .about #about:last-child  {
-    border: none;
-  }
-
-  .flex-row {
-    justify-content: center;
-  }
-
-  .flex-row h3 {
-    font-size: 14px;
-  }
-
-  .flex-row i {
-    display: none;
-  }
 }
 
 /* introduction */
@@ -276,35 +222,6 @@ body {
   background: #a6dbed;
   box-shadow: 1px 4px 10px rgba(0,0,0, 0.3);
   border: 2px solid #f2f2f241;
-}
-
-@media (max-width: 600px) {
-  .site-main .intro {
-    grid-template-columns: 1fr;
-    margin-top: 30rem;
-  }
-
-  .intro .about-img img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .intro .about-us-text{
-    padding-bottom: 2rem;
-  }
-
-  .intro .about-us-text h2 {
-    font-size: 1.5rem;
-  }
-  
-  .intro .about-us-text p {
-    font-size: 15px;
-  }
-
-  .intro .btn {
-    bottom: -212%;
-    padding: .3rem .8rem;
-  }
 }
 
 /* services */
@@ -758,10 +675,10 @@ section.client {
 }
 
 .testimony > img {
-  height: 120px
+  height: 120px;
   width: 50%;
   border: 5px solid #eee;
-  border-radius: 70%
+  border-radius: 70%;
 }
 
 .testimony .remark {
@@ -810,7 +727,7 @@ section.client {
   width: 90%
 }
 
-.footer .container input[type="submit"] {
+.footer .container button {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: bold;
@@ -863,4 +780,264 @@ section.client {
 
 .footer .footer-note a:hover {
   color: #000;
+}
+
+/* TODOS
+media screen queries for 
+  Ipad mini: 768px
+  IPhone 5 : 320px
+  Iphone 6,7,8 : 375px
+  plus : 414px
+  IPhone X : 375px
+
+*/
+/* Media queries */
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .navbar .nav-brand {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  
+  .navbar .nav-lists {
+    display: none;
+  }
+  
+  .fa-bars {
+    display: flex;
+    font-size: 1.4rem;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  
+  .hero {
+    height: 90vh;
+  }
+  
+  .banner-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-btn {
+    padding: 10px 22px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 50%;
+  }
+   
+  .site-main .about {
+    grid-template-columns: 1fr;
+    top: 80%;
+    height: 55vh;
+    padding-bottom: 10px;
+  }
+  
+  .about #about {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .about #about:last-child {
+    border: none;
+  }
+  
+  .about .flex-row {
+    margin-top: -20px;
+    justify-content: center;
+  }
+  
+  .about .flex-row h3 {
+    font-size: 15px;
+    margin: 0px 0;
+  }
+  
+  .about .flex-row i {
+    display: none;
+  }
+  
+  .about p {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  
+  .site-main .intro {
+    grid-template-columns: 1fr;
+    margin-top: 18rem;
+    height: inherit;
+  }
+  
+  .intro .about-img img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .intro .about-us-text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .intro .about-us-text h2 {
+    font-size: 1.1rem; 
+    margin: 0;
+  }
+  
+  .intro .about-us-text p {
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: justify;
+    margin-bottom: 8px;
+    padding: 0 8px; 
+  }
+  
+  .intro .btn {
+    border: none;
+    align-self: flex-end;
+    padding: 15px;
+    position: absolute;
+    bottom: -10px;
+  }
+  
+  .intro .btn:hover {
+    border: none;
+    text-decoration: underline;
+    background: transparent;
+    color: #000;
+    box-shadow: none;
+  }
+  
+  .service-title {
+    margin-top: 5rem;
+  }
+  
+  .service-title h1 {
+    font-size: 1.5rem;
+  }
+  
+  .service-title p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  
+  .services .container {
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin: 2rem 0;
+  }
+  
+  .services .container > .service img {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    transform: translateX(calc(100% + 17vh))
+  }
+  
+  .services .container > .service h3 {
+    font-size: 1rem;
+    font-weight: bold; 
+  }
+  
+  .services .container > .service p {
+    margin-bottom: 2rem;
+  }
+  
+  .service-title .sub-title:before {
+    width: 40px;
+    left: -42px;
+  }
+  
+  .service-title .sub-title:after {
+    width: 40px;
+    right: -42px;
+  }
+  
+  .projects {
+    height: 300px;
+  }
+  
+  .project h1 {
+    font-size: 1.4rem;
+  }
+  
+  .project .banner-btn {
+    width: 35%;
+  }
+  
+  .blog-title > h1 {
+    font-size: 1.5rem;
+  }
+  
+  .blog-title > p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  
+  .blogs .container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 1rem 1rem;
+  }
+  
+  .container .blog-post > .contents h1 {
+    font-size: 1.1rem;
+  } 
+  
+  .team-title > h1 {
+    font-size: 1.4rem;
+  }
+  
+  .team-title > p {
+    font-size: 15px;
+  }
+  
+  .teams > .container {
+    flex-wrap: wrap;
+  }
+  
+  section.client {
+   height: 50vh;
+  }
+  
+  .client .container {
+    margin-bottom: 2rem;
+  }
+  
+  .testimony-title > h1 {
+    font-size: 1.4rem;
+  }
+  
+  .testimony-title > p {
+    font-size: 14px;
+  }
+  
+  .footer .container {
+    grid-template-columns: 1fr;
+    height: initial;
+  }
+  
+  .footer .container h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer .container input {
+    width: 100%;
+  }
+  
+  .footer .container button {
+    width: 100%;
+    height: 35px;  
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .footer .footer-note {
+    height: inherit;
+  }
+  
+  .footer .footer-note span {
+    display: block;
+    margin: 5px 0;
+  }
 }

@@ -7,7 +7,20 @@ $(document).ready(function () {
     margin:10,
     autoplay:true,
     autoplayTimeout:5000,
-    autoplayHoverPause:true
+    autoplayHoverPause: true,
+    responsive:{
+      0:{
+        items:1,
+      },
+                  
+      480:{
+        items:2,
+      },
+                  
+      768:{
+       items:3,
+      }
+    }
   });
   $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[5000])
