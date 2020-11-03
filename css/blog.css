@@ -332,3 +332,78 @@ ul {
   height: 80px;
   padding: 4px;
 }
+
+@media screen and (max-width: 360px) {
+  .app {
+    overflow-x: none;
+  }
+
+  .navbar {
+    width: 100vw;
+    position: skicky;
+    top: 0;
+    z-index: 99;
+  }
+
+  .nav-lists {
+    display: none;
+  }
+
+  .blog-area {
+    grid-template-columns: 1fr;
+    margin: 5rem 0;
+    grid-gap: 0;
+    width: 100%;
+  }
+
+  .left-side .blog-post {
+    padding: 0 14px;
+    margin-bottom: 4rem;
+  }
+
+  .blog-post-img {
+    height: 320px;
+    margin-bottom: 1.2rem;
+  }
+
+  .blog-post-img img{
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-post > .post-date {
+    width: 80%;
+    height: 20px;
+    bottom: 175px;
+    margin: 0 5vw;
+  }
+
+  .blog-post > .post-date .post-icons {
+    padding: 0;
+  }
+
+  .post-date .post-icons p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 0 6px;
+  }
+
+  .blog-post .post-content h1 {
+    font-size: 1rem;
+  }
+
+  .blog-post .post-content .para {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .paginate {
+    padding: 1rem 0 5rem;
+  }
+
+  .right-side .search-box {
+    padding: 10px;
+  }
+}
