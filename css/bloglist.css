@@ -61,6 +61,14 @@
   align-items: center;
 }
 
+.like button {
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  background: transparent;
+  font-size: 16px;
+}
+
 .likes .like p {
   margin: 0 10px;
 }
@@ -85,7 +93,7 @@
 
 .prev-next-post {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   margin-top: 2rem 0;
   padding-bottom: 2rem;
   border-bottom: 1px solid #ddd;
@@ -159,6 +167,7 @@
   object-fit: cover;
   padding: 5px 8px;
   border-radius: 50%;
+  margin-top: -22%;
 }
 
 .post-author-about .post-about {
@@ -289,3 +298,145 @@
   padding: 2px;
 }
 
+@media screen and (max-width: 360px) {
+  .blog-area {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .right-side {
+    margin-top: 2rem;
+    width: 100vw;
+  }
+
+  .post {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .post-img {
+    width: 100%;
+  }
+
+  .post-img img {
+    width: 340px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .post-content {
+    width: 74%;
+    padding: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  .post-content h1 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .post-content i {
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .post-content p {
+    font-size: 14px; 
+  }
+
+  .likes {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .share-post {
+    padding-top: 10px;
+    justify-content: space-between;
+    width: 78%;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .share-post a i {
+    padding: 0 10px;
+  }
+  /* Todo: use carousel for it */
+
+  .prev-post h6, .next-post h6 {
+    font-size: 14px;
+    width: 60vw;
+  }
+
+  .prev-post-text img, .next-post-text img {
+    width: 80px;
+    height: auto;
+  }
+
+  .prev-post-content h5, .next-post-content h5 {
+    font-size: 12px;
+  }
+  
+  .prev-post-content p, .next-post-content p {
+    font-size: 8px;
+  }
+
+  .post-author-about {
+    width: 95vw;
+    margin: 1rem 5px;
+  }
+
+  .post-author-about > img {
+    width: 100px;
+    height: auto;
+    padding-left: 2px;
+  }
+
+  .post-author-about .post-about h4 {
+    font-size: 14px;
+  }
+
+  .post-author-about .post-about p {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .post-comments h2 {
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+   .post-comments .comment, .comment-reply {
+    width: 90vw;
+  }
+
+  .post-comments .comment > img {
+    width: 80px;
+    height: auto;
+  }
+
+  .post-comments .comment-body > p, .reply-body > p {
+    font-size: 12px;
+  }
+
+  .post-comments .commentor, .reply-body .reply {
+    width: 100%;
+  }
+
+  .post-comments .commentor h4, .reply h4 {
+    font-size: 12px;
+  }
+
+  .post-comments .commentor h6, .reply h6 {
+    font-size: 8px;
+  }
+
+  .post-comments .commentor button {
+    font-size: 10px;
+  }
+
+  .comment-reply img {
+    width: auto;
+    height: 70px;
+  }
+}

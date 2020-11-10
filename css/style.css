@@ -32,6 +32,8 @@ body {
   height: 60px;
   width: 100%;
   background: #f3f3f3;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  border-bottom: 1px solid #dbdada;
   z-index: 99;
 }
 
@@ -138,7 +140,7 @@ body {
   background: #fff;
   padding: 2rem 5vw;
   position: absolute;
-  bottom: -25%;
+  bottom: -23%;
   border-radius: 10px;
   margin: 0 3.4vw;
   box-shadow: 2px 3px 10px rgba(0,0,0,0.15);
@@ -604,6 +606,7 @@ body {
 
 .teams .container .team-member i {
   background: #ddd;
+  color: #000618;
   padding: 8px 10px;
   border-radius: 50%;
 }
@@ -731,12 +734,18 @@ section.client {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: bold;
-  color: #fff;
+  color: #000922;
   background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border: none;
   outline: none;
   cursor: pointer;
-  width: 50%;
+  width: 90%;
+  height: 30px;
+  transition: color .3s ease;
+}
+
+.footer .container button:hover {
+  color: #666666;
 }
 
 .footer .container .address {
@@ -792,9 +801,10 @@ media screen queries for
 
 */
 /* Media queries */
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (max-width: 360px) {
   .app {
     overflow-x: hidden;
+    width: 100vw;
   }
 
   .navbar {
@@ -1011,13 +1021,30 @@ media screen queries for
   .client .container {
     margin-bottom: 2rem;
   }
+
+  .testimony {
+    width: 90%;
+    padding-left: 10px;
+  }
   
   .testimony-title > h1 {
     font-size: 1.4rem;
   }
+
+  .testimony img {
+    height: auto;
+  }
   
   .testimony-title > p {
     font-size: 14px;
+  }
+
+  .testimony .remark h5 {
+    font-size: 14px;
+  }
+
+  .testimony .remark p {
+    font-size: 12px;
   }
   
   .footer .container {
@@ -1044,6 +1071,10 @@ media screen queries for
   
   .footer .footer-note {
     height: inherit;
+  }
+
+  .footer .footer-note p {
+    font-size: 14px;
   }
   
   .footer .footer-note span {
