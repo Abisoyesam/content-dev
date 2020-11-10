@@ -410,11 +410,16 @@ ul {
 
 @media screen and (max-width: 320px) {
   .blog-post > .post-date {
-    bottom: 215px;
+    bottom: 195px;
     width: 86%;
     margin: 0 2vw;
   }
+  
   .post-date .post-icons p {
     font-size: 10px;
+  }
+
+  .blog-post .post-content h1 {
+    font-size: 15px;
   }
 }
