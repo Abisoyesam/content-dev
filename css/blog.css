@@ -408,7 +408,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .blog-post > .post-date {
     bottom: 215px;
     width: 86%;
