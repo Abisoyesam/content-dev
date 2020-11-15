@@ -47,12 +47,16 @@ ul {
 
 .blog-post > .post-date .post-icons {
   display: flex;
-  padding: 0 6rem; 
+  padding: 0 5rem;
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto;
 }
 
 .post-date .post-icons p {
   margin: 3px 20px 0px;
   color: #000;
+  font-size: 18px;
 }
 
 .post-date .post-icons p .fas {
@@ -423,3 +427,4 @@ ul {
     font-size: 15px;
   }
 }
+
